@@ -1,0 +1,182 @@
+/* basic brown #5e3018 */
+ /* lighter red #e76143 */
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300;600&display=swap');
+
+:root {
+  --basicBrown: #5e3018;
+  --lighterRed: #e76143;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(zabatana_poster/Zabatana-Poster.otf);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+body {
+  /* font-family: 'M PLUS 1 Code', sans-serif; */
+  font-family: myFirstFont;
+  font-weight: 300;
+  background: linear-gradient(to bottom right, #211108,#9b4f28);
+  cursor: default;
+  letter-spacing: 2px;
+}
+
+/********************************* HEADER *****************************/
+header {
+  /* background: green; */
+  height:auto;
+  width: 100vw;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+nav {
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top:0;
+}
+
+#mobileMenu {
+  position: absolute;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  padding-top: 25px;
+  background: linear-gradient(to bottom right, #211108,#9b4f28);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  position: sticky;
+  display: none;
+}
+
+#mobileMenu ul {
+  text-align: center;
+}
+#mobileMenu li {
+  list-style-type: none;
+  font-size: 34px;
+  color: white;
+}
+
+nav h2 {
+  color:white;
+  font-size: 38px;
+}
+
+nav sup {
+  font-size: 18px;
+}
+
+nav ul {
+  display: flex;
+}
+ 
+nav ul a {
+  text-decoration: none;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 10px;
+  background: linear-gradient( white,var(--lighterRed));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  transition: 300ms;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+nav ul li:hover {
+  border: 2px solid var(--lighterRed);
+  transition: 300ms;
+}
+
+nav img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+nav i {
+  position: absolute;
+  right: 15px;
+  color: white;
+  display: none;
+}
+
+#hero {
+  text-align: center;
+}
+
+#hero h1 {
+  padding-top: 100px;
+  font-size: 72px;
+  background: linear-gradient( white,var(--lighterRed));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
+}
+
+#hero p {
+  background: linear-gradient( white,var(--lighterRed));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 26px;
+}
+/************************************ MAIN ***************************/
+main {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card1,
+.card2,
+.card3 {
+  width: 270px;
+  height: 410px;
+  border: 2px solid var(--lighterRed);
+  cursor: pointer;
+}
+
+/************************************ MAIN ***************************/
+footer {
+  text-align: center;
+}
+
+footer button {
+  font-size: 20px;
+  padding: 5px;
+  width: 200px;
+  color: var(--basicBrown);
+  margin-bottom: 30px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 100ms;
+  background: white;
+}
+
